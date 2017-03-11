@@ -11,3 +11,27 @@
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { 
 	color: #92278F;
 }
+
+.main-content h1 small, .main-content h2 small, .main-content h3 small, .main-content h4 small, .main-content h5 small, .main-content h6 small{ 
+	font-size: 50%;
+}
+
+.latest-news {
+	width: 100%;
+}
+
+.latest-news .news {
+	color: #606c71;
+	font-size: 80%;
+	width: 33%;
+	border: 1px solid #92278F;
+	border-radius: 25px;
+	padding: 15px;
+}
+
+.latest-news a:hover{
+	text-decoration: none;
+	.news p {
+		color: #662d91;
+	}
+}

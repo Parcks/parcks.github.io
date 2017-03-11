@@ -1,3 +1,10 @@
 theme: jekyll-theme-cayman
 title: Parcks
 description: A flexible Environment Packages Installer
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
