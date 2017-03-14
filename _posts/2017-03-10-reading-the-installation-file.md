@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reading the install file"
+title:  "Reading the installation file"
 date:   2017-03-10 16:16:01
 categories: internals reading
 excerpt: Reading the installation file is the first thing Parcks does. This article explains how it works behind the scenes.
