@@ -1,0 +1,145 @@
+.parcks-animation-container{
+	position: relative;
+}
+
+.parcks-animation-packages, .parcks-animation-computer{
+	display: none;/* hide on small screens*/
+}
+
+.parcks-animation-logo img{
+	float: left;
+	width: 25%;
+	height: auto;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.parcks-animation-logo img{
+		display: block;
+		margin: auto;
+		z-index: 1;
+	}  
+	.parcks-animation-packages img{
+		position: absolute;
+		display: block;
+		width:10%;
+		height: auto;
+		z-index: -1;
+	}
+	#package-1{
+		-webkit-animation: anim-pack-1 2s infinite  normal ease-out;
+		animation: anim-pack-1 2s infinite  normal ease-out;
+	}
+
+	@keyframes anim-pack-1{
+		0%{
+			left: 0%;
+			top: 0%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+
+	@-webkit-keyframes anim-pack-1{
+		0%{
+			left: 0%;
+			top: 0%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+	#package-2{
+		-webkit-animation: anim-pack-2 2s infinite  normal ease-out;
+		animation: anim-pack-2 2s infinite  normal ease-out;
+	}
+
+	@keyframes anim-pack-2{
+		0%{
+			left: 0%;
+			top: 50%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+
+	@-webkit-keyframes anim-pack-2{
+		0%{
+			left: 0%;
+			top: 50%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+	#package-3{
+		-webkit-animation: anim-pack-3 2s infinite  normal ease-out;
+		animation: anim-pack-3 2s infinite  normal ease-out;
+	}
+
+	@keyframes anim-pack-3{
+		0%{
+			left: 0%;
+			top: 90%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+
+	@-webkit-keyframes anim-pack-3{
+		0%{
+			left: 0%;
+			top: 90%;
+		}
+		100%{
+			left: 45%;
+			top: 50%;
+		}
+	}
+
+	#package-4{
+		left: 50%;
+		top:50%;
+		-webkit-animation: anim-pack-4 4s infinite  normal linear;
+		animation: anim-pack-4 4s infinite  normal linear;
+	}
+	@keyframes anim-pack-4{
+		0%, 20%{
+			left: 50%;
+			top: 50%;
+		}
+		80%, 100%{
+			left: 100%;
+			top: 50%;
+		}
+	}
+
+	@-webkit-keyframes anim-pack-4{
+		0%, 20%{
+			left: 50%;
+			top: 50%;
+		}
+		80%, 100%{
+			left: 100%;
+			top: 50%;
+		}
+	}
+
+	.parcks-animation-computer img{
+		z-index: 1;
+		position: absolute;
+		right: -15%;
+		top: 60%;
+		width: 20%;
+		height: auto;
+		transform: translate(0, -50%);
+	}
+}/* end media query desktop only */

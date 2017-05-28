@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<h1>Parcks</h1>
-Text
+{% include what_is_parcks.html %}
 
 <h2>Latest news</h2>
 <div class="latest-news">
