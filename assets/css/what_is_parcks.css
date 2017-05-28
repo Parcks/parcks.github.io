@@ -21,7 +21,7 @@
 		float: none;
 	}  
 	.parcks-animation-packages, .parcks-animation-computer{
-		display: contents;/* hide on small screens*/
+		display: block;/* show on wide screens*/
 	}
 	.parcks-animation-packages img{
 		position: absolute;
