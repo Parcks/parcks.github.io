@@ -72,7 +72,7 @@ If a `Shell` object is detected the `parse` method of the [`ShellParser`](https:
 Another possibility is the detection of a `Plugin`. A `Plugin` is parsed by - surprisingly - the [`PluginParser`](https://github.com/Parcks/core/blob/master/src/domain/parse/plugin_parser.py#L28). If the `Plugin` definition contains commands, then the `ShellParser` is used to create a `Shell` object and this object is afterwards linked to the `Plugin`.
 
 However, if there are no commands specified but an url is available, then the `Plugin` is still considered as valid. The `PluginParser` will simply create the `Plugin` object, but the url will be probed when installing the `Package`. 
-Thereby a `Plugin` definition without an url an without commands is considered as invalid and an exception will be thrown.
+Thereby a `Plugin` definition without an url and without commands is considered as invalid and an exception will be thrown.
 
 ### Wrapping up
 When all the parsing ran successfully, the following structure is created:
