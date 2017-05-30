@@ -13,13 +13,13 @@
   <body>
     {% include page_header_post.html %}
 
-    <section class="main-content">
+    <section class="main-content container">
 	<h2>{{ page.title }} <small>{{ page.date | date_to_string }}</small></h2>
       {{ content }}
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> is maintained by <a href="http://setarit.com">Setarit</a>.</span>
+          <span class="site-footer-owner"><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> is maintained by <a href="http://setarit.com">Setarit</a>. <small>Packs logo by F.C.</small></span></span>
         {% endif %}
       </footer>
     </section>

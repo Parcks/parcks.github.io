@@ -1,0 +1,151 @@
+.mission-rocket-container{	
+	position: relative;
+	overflow: hidden;
+	background-color: #87ceeb;
+	border-radius: 50%;
+	padding: 1rem;
+	float: right;
+}
+#rocket{
+	transform: scale(0.75);
+}
+.mission-clouds{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+@media only screen and (min-width : 500px) {
+	.mission-rocket-container{	
+		width: 25%;
+	}
+	.mission-text {
+		width: 75%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.mission-rocket-container{	
+		width: 25%;
+	}
+	.mission-text {
+		width: 75%;
+	}
+}
+
+#mission-cloud-1 {
+	-webkit-animation: anim-cloud-1 2s infinite  normal ease-out;
+	animation: anim-cloud-1 2s infinite  normal ease-out;
+	opacity: 0;
+}
+
+@keyframes anim-cloud-1{
+	0%{
+		top: -20%;
+		right: -20%;
+		width: 10%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 100%;
+		width: 50%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes anim-cloud-1{
+	0%{
+		top: -20%;
+		right: -20%;
+		width: 10%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 100%;
+		width: 50%;
+		opacity: 1;
+	}
+}
+
+#mission-cloud-2 {
+	-webkit-animation: anim-cloud-2 2s infinite  normal ease-out;
+	-webkit-animation-delay: 1s;
+	animation: anim-cloud-2 2s infinite  normal ease-out;
+	animation-delay: 1s;
+	top: -25%;
+	right: 30%;
+	opacity: 0;
+}
+
+@keyframes anim-cloud-2{
+	0%{
+		top: -25%;
+		right: 30%;
+		width: 20%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 140%;
+		width: 55%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes anim-cloud-2{
+	0%{
+		top: -25%;
+		right: 30%;
+		width: 20%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 140%;
+		width: 55%;
+		opacity: 1;
+	}
+}
+
+#mission-cloud-3 {
+	-webkit-animation: anim-cloud-3 2s infinite  normal ease-out;
+	-webkit-animation-delay: 1.5s;
+	animation: anim-cloud-3 2s infinite  normal ease-out;
+	animation-delay: 1.5s;
+	top: -20%;
+	right: -30%;
+	opacity: 0;
+}
+
+@keyframes anim-cloud-3{
+	0%{
+		top: -20%;
+		right: -40%;
+		width: 20%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 60%;
+		width: 55%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes anim-cloud-3{
+	0%{
+		top: -20%;
+		right: -40%;
+		width: 20%;
+		opacity: 1;
+	}
+	100%{
+		top: 100%;
+		right: 60%;
+		width: 55%;
+		opacity: 1;
+	}
+}
