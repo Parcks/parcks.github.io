@@ -20,6 +20,7 @@
     function handleReadyStateChanged(xhr, domParentId){
         if(xhr.readyState === 4){
             if(xhr.status === 200){
+		removeLoadingMessage();
                 displayContents(JSON.parse(xhr.response), domParentId);
             }else{
                 displayErrorMessage();
@@ -28,21 +29,28 @@
     }
 
     function displayErrorMessage(){
-        alert("ERROR");
+        alert("ERROR! Something went wrong!");
         //TODO
     }
 
     function displayContents(response, domParentId){
-        console.log(response);
         addList(domParentId, response);
+    }
+
+    function removeLoadingMessage(){
+	let messageElement = document.getElementById("loading-message");
+	if(messageElement !== null){
+		messageElement.remove();
+	}
     }
 
     function addList(parentId, contentsArray){
         let parent = document.getElementById(parentId);
-        console.log(parent);
         let ulTag = document.createElement("ul");
         for(let index = 0; index < contentsArray.length; index++){
-            createListItem(ulTag, contentsArray[index]);
+		if(! contentsArray[index]["name"].startsWith(".")){
+            		createListItem(ulTag, contentsArray[index]);
+		}
         }
         parent.appendChild(ulTag);
     }
@@ -67,7 +75,7 @@
     }
 
     function createLinkTag(repoItem){
-        let linkTag = document.createElement("a");
+	let linkTag = document.createElement("a");
         createLinkReference(linkTag, repoItem);
         return linkTag;
     }
