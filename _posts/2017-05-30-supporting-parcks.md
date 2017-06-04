@@ -20,7 +20,7 @@ As money is required to let this project survive, you can make a donation at Pat
 <a href="https://www.patreon.com/bePatron?u=6393211" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 #### Contributions
-Before contributing please read the [contribution guidelines](https://github.com/Parcks/core/blob/master/CONTRIBUTING).
+Before contributing please read the [contribution guidelines](https://github.com/Parcks/core/blob/master/CONTRIBUTING.md).
 We welcome any form of contributions:
 * Website support
 * Extra features
