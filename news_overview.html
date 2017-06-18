@@ -7,6 +7,11 @@ layout: post-overview
 	<a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
+<h3>Release notes</h3>
+{% for post in site.categories.release-notes %}
+	<a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
+
 <h3>Other</h3>
 {% for post in site.categories.other %}
     <a href="{{ post.url }}">{{ post.title }}</a>

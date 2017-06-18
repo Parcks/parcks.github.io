@@ -24,7 +24,7 @@
 
 .container {
 	max-width: 64rem;
-	padding: 2rem 6rem;
+	padding: 2rem 1rem;
 	margin: 0 auto;
 }
 
@@ -67,6 +67,7 @@
 	border-radius: 25px;
 	padding: 15px;
 	display: inline-block;
+	margin-bottom: 5%;
 }
 
 .latest-news h3{
@@ -91,7 +92,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: bold;
-	padding: 15px;
+	padding: 15px;	
 }
 
 #all-news:hover{
@@ -103,11 +104,14 @@
 	.latest-news .news , #all-news {
 		width: 48%;
 	}
+	.container{
+		padding: 2rem 6rem;
+	}
 }
 
 @media only screen and (min-width : 992px) {
 	.latest-news .news , #all-news {
-		width: 33%;
+		width: 30%;
 	}
 	.news p {
 		display: inline;
