@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: Parcks
-description: A Standardized Packages Installer
+description: A Scriptable Packages Installer
 google_analytics: UA-67276176-2
 
 exclude:
